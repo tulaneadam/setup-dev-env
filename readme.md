@@ -11,10 +11,11 @@ B.  To install and run on Windows:
 1.  Open/run powershell terminal as admin(right click powershell, choose run as admin).
 2.  paste and run:
 
-Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
-scoop install nodejs
-scoop install git
-scoop install mongodb
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+choco install nodejs
+choco install mongodb
+choco install git.install
+choco install vscode
 
 
 C. To install and run as npm module(Linux/Mac only):
