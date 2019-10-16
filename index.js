@@ -1,4 +1,4 @@
-import Bowser from "bowser";
+var Bowser =require('bowser');
 var shell = require('shelljs');
 
 const bowser = Bowser.getParser(window.navigator.userAgent);
