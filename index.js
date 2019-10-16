@@ -9,7 +9,11 @@ else if (platform='win32'){
 shell.echo('Copy the below text/code and paste it in a powershell terminal with admin access (right click powershell app, run as admin):');
 shell.echo(' ');
 shell.echo(' ');
-shell.echo(`Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) choco install nodejs choco install mongodb choco install git.install choco install vscode`)
+shell.echo(`Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')`);
+shell.echo(`scoop install nodejs`);
+shell.echo(`scoop install git`);
+shell.echo(`scoop install mongodb`);
+
 }
 else if (platform='darwin'){
 
