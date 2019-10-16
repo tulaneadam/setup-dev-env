@@ -33,7 +33,8 @@ https://nodejs.org/dist/v10.16.3/node-v10.16.3-x86.msi
 3.  Copy the terminal output and paste it in powershell terminal, run as admin.
 
 D. To install and run as npm module(Linux/Mac/Windows):
-0.  Install nodejs:
+
+0.  Install nodejs (via terminal or link):
 1.  Create a new folder in desktop.
 2.  Open folder in terminal and initialize repo (npm init).
 3.  In main folder/repo, install the package (npm i setup-dev-env).
