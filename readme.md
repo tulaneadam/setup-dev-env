@@ -8,7 +8,9 @@ A.  To install and run from github repo on Linux(debian/ubuntu):
 0.  Install nodejs via terminal:
 
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
 sudo apt-get install -y nodejs
+
 1.  Download the setup-dev-env package to your desktop and unzip.
 2.  run in project directory terminal:
     npm i && npm start
