@@ -1,6 +1,6 @@
 setup-dev-env
 
-Sets up a development environment on Windows, Mac, and Linux platforms.  Installs Node.js, Mongodb, Git, VSCode, and a package manager(chocolatey, brew, or synaptic).
+Sets up a development environment on Windows, Mac, and Linux platforms.  Installs Node.js, Mongodb, Git, VSCode, and a package manager(chocolatey, brew, or synaptic) on each platform the app is run on.
 
 A.  To install and run from zip/github repo on Linux/Mac:
 1.  Download the setup-dev-env app to your desktop and unzip.
