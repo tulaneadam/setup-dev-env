@@ -9,4 +9,9 @@ shell.exec(`sudo apt-get update && sudo apt-get upgrade && sudo apt-get install 
 else if (platform='darwin'){
 
  shell.exec(`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`);
+ shell.exec(`brew install node`);
+ shell.exec(`brew install mongodb-community@4.2`);
+ shell.exec(`brew cask install visual-studio-code`);
+ 
+
 }
