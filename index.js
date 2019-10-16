@@ -1,6 +1,13 @@
 var os = require('os');
 var shell = require('shelljs');
 var platform = os.platform();
+var getos = require('getos')
+ 
+getos(function(e,os) {
+  if(e) return console.log(e)
+  console.log(JSON.stringify(os))
+})
+
 
 if (platform==='linux') {
 shell.exec(`sudo apt-get update`);
