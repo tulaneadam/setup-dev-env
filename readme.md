@@ -1,4 +1,6 @@
-chromebook-linux-dev-env
+setup-dev-env
+
+sets up a development environment on Windows, Mac, and Linux platforms.
 
 Run with:
-node index
+npm start
