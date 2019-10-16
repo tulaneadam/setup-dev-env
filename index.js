@@ -1,7 +1,6 @@
-var Bowser1 =require('bowser');
+var bowser =require('bowser');
 var shell = require('shelljs');
 
-const bowser = Bowser1.getParser(window.navigator.userAgent);
 const platform = bowser.getOSName();
 
 if (platform==='Linux'||'Chrome OS') {
