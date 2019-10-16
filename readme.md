@@ -12,6 +12,7 @@ B.  To install and run on Windows:
 2.  paste and run:
 
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
 choco install nodejs
 choco install mongodb
 choco install git.install
