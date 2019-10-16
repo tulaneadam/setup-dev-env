@@ -12,6 +12,7 @@ else if (platform='darwin'){
  shell.exec(`brew install node`);
  shell.exec(`brew install mongodb-community@4.2`);
  shell.exec(`brew cask install visual-studio-code`);
+ shell.exec(`brew install git`);
  
 
 }
