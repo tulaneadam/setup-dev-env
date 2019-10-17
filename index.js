@@ -45,12 +45,12 @@ else if (platform==='win32'){
 shell.echo(`Copy the below text/code and paste it in a powershell terminal, make sure to run powershell as admin:`);
 shell.echo(' ');
 shell.echo(' ');
-shell.echo(`Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`);
-shell.echo(`choco install nodejs`);
-shell.echo(`choco install mongodb`);
-shell.echo(`choco install git.install`);
-shell.echo(`choco install vscode`);
-shell.echo(`choco install gitkraken`);
+shell.echo(`Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'));`);
+shell.echo(`choco install nodejs;`);
+shell.echo(`choco install mongodb;`);
+shell.echo(`choco install git.install;`);
+shell.echo(`choco install vscode;`);
+shell.echo(`choco install gitkraken;`);
 }
 
 else if (platform==='linux' && distro==='Debian') {
