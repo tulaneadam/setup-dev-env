@@ -37,6 +37,7 @@ else if (platform==='darwin'){
  shell.exec(`brew install mongodb-community@4.2`);
  shell.exec(`brew cask install visual-studio-code`);
  shell.exec(`brew install git`);
+ shell.exec(`brew cask install gitkraken`);
  
 }
 
@@ -49,6 +50,7 @@ shell.echo(`choco install nodejs`);
 shell.echo(`choco install mongodb`);
 shell.echo(`choco install git.install`);
 shell.echo(`choco install vscode`);
+shell.echo(`choco install gitkraken`);
 }
 
 else if (platform==='linux' && distro==='Debian') {
