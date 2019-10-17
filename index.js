@@ -1,6 +1,7 @@
 var os = require('os');
 var shell = require('shelljs');
 var getos = require('getos');
+var platform = os.platform();
 
 var getos = require('getos')
  
