@@ -14,7 +14,7 @@ console.log(distro);
 
 
 
-if (platform==='linux') {
+if (platform==='linux' && distro!=='Debian') {
  shell.exec(`sudo apt-get update`);
  shell.exec(`sudo apt-get install -y gnome-software gnome-packagekit`);
  shell.exec(`sudo apt-get update`);
@@ -50,7 +50,7 @@ shell.echo(`choco install git.install`);
 shell.echo(`choco install vscode`);
 }
 
-else if (platform==='chromeos') {
+else if (platform==='linux' && distro==='Debian') {
 shell.exec(`sudo apt-get update`);
 shell.exec(`sudo apt-get install -y gnome-software gnome-packagekit`);
  shell.exec(`sudo apt-get update`);
