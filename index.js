@@ -7,12 +7,12 @@ getos(function(e,os) {
   if(e) return console.log(e);
   var result = (os);
   var distro = result.dist;
-  
+ 
+ console.log(`Platform:`);
  if (distro!==undefined) {console.log(distro)}
  else if (distro===undefined) {console.log(platform)}
 
-
-
+console.log(' ');
 
 
  if (platform==='linux' && distro!=='Debian') {
