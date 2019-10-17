@@ -2,15 +2,15 @@ var os = require('os');
 var shell = require('shelljs');
 var getos = require('getos');
 var platform = os.platform();
-
-var getos = require('getos')
  
 getos(function(e,os) {
   if(e) return console.log(e);
   var result= JSON.stringify(os);
   console.log(result);
-}
 
+})
+
+distro='';
 
 
 if (platform==='linux' && distro!=='Debian') {
