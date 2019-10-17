@@ -2,11 +2,11 @@ var os = require('os');
 var shell = require('shelljs');
 var getos = require('getos');
 
-var platform = os.platform();
-
+var getos = require('getos')
+ 
 getos(function(e,os) {
   if(e) return console.log(e)
-  console.log((os));
+  console.log("Your OS distribution is:" +JSON.stringify(os.dist))
 })
 
 
