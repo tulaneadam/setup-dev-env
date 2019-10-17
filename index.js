@@ -1,6 +1,12 @@
 var os = require('os');
 var shell = require('shelljs');
+var getos = require('getos');
+
 var platform = os.platform();
+
+getos(function(os) {
+  console.log(JSON.stringify(os.dist))
+})
 
 
 
