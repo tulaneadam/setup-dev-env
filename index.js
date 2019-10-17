@@ -74,7 +74,7 @@ shell.exec(`sudo apt-get install -y gnome-software gnome-packagekit`);
  shell.exec(`sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'`);
  shell.exec(`sudo apt-get install -y code`);
  shell.exec(`wget https://release.gitkraken.com/linux/gitkraken-amd64.deb`);
- shell.exec(`sudo dpkg -i gitkraken-amd64.deb`);
+ shell.exec(`sudo apt install ./gitkraken-amd64.deb`);
  
 }
 
