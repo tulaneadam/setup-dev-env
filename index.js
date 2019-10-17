@@ -49,8 +49,8 @@ shell.echo(`Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object S
 shell.echo(`choco install nodejs;;`);
 shell.echo(`choco install mongodb;;`);
 shell.echo(`choco install git.install;;`);
-shell.echo(`choco install vscode;;`);
-shell.echo(`choco install gitkraken`);
+shell.echo(`choco install gitkraken;;`);
+shell.echo(`choco install vscode`);
 }
 
 else if (platform==='linux' && distro==='Debian') {
