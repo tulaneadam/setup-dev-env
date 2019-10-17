@@ -58,11 +58,11 @@ shell.exec(`sudo apt-get install -y gnome-software gnome-packagekit`);
  shell.exec(`sudo apt-get install -y apt-transport-https`)
  shell.exec(`sudo apt-get update`)
  shell.exec(`git config --global credential.helper cache`);
- shell.exec(`sudo apt install -y snapd`);
- shell.exec(`sudo snap install snap-store`);
- shell.exec(`sudo snap install mongo32`);
- shell.exec(`sudo snap install gitkraken`);
- shell.exec(`sudo snap install code --classic`);
+ //shell.exec(`sudo apt install -y snapd`);
+ //shell.exec(`sudo snap install snap-store`);
+ //shell.exec(`sudo snap install mongo32`);
+ //shell.exec(`sudo snap install gitkraken`);
+ //shell.exec(`sudo snap install code --classic`);
  shell.exec(`curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - && sudo apt-get install -y nodejs && wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -`);
  shell.echo(`"deb http://repo.mongodb.org/apt/debian stretch/mongodb-org/4.2 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list`);
  shell.exec(`sudo apt-get update`); 
