@@ -6,7 +6,7 @@ var getos = require('getos')
  
 var distro = getos(function(e,os) {
   if(e) return console.log(e)
-  console.log("Your OS distribution is:" +JSON.stringify(os.dist))
+  return "Your OS distribution is:" +JSON.stringify(os.dist);
 })
 
 console.log(distro);
