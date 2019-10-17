@@ -4,8 +4,9 @@ var getos = require('getos');
 
 var platform = os.platform();
 
-getos(function(os) {
-  console.log(JSON.stringify(os))
+getos(function(e,os) {
+  if(e) return console.log(e)
+  console.log("Your OS is:" +JSON.stringify(os))
 })
 
 
