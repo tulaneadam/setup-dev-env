@@ -5,16 +5,17 @@ var platform = os.platform();
 
 
 if (platform==='linux') {
-shell.exec(`sudo apt-get update`);
-shell.exec(`sudo apt-get install -y gnome-software gnome-packagekit`);
+ shell.exec(`sudo apt-get update`);
+ shell.exec(`sudo apt-get install -y gnome-software gnome-packagekit`);
  shell.exec(`sudo apt-get update`);
  shell.exec(`sudo apt install -y nautilus`) 
  shell.exec(`sudo apt-get install -y apt-transport-https`)
  shell.exec(`sudo apt-get update`)
  shell.exec(`git config --global credential.helper cache`);
  shell.exec(`sudo apt install -y snapd`);
+ shell.exec(`sudo snap install snap-store`);
  shell.exec(`sudo snap install mongo32`);
-shell.exec(`sudo snap install gitkraken`);
+ shell.exec(`sudo snap install gitkraken`);
  shell.exec(`sudo snap install code --classic`);
 }
 
@@ -48,6 +49,7 @@ shell.exec(`sudo apt-get install -y gnome-software gnome-packagekit`);
  shell.exec(`sudo apt-get update`)
  shell.exec(`git config --global credential.helper cache`);
  shell.exec(`sudo apt install -y snapd`);
+ shell.exec(`sudo snap install snap-store`);
  shell.exec(`sudo snap install mongo32`);
  shell.exec(`sudo snap install gitkraken`);
  shell.exec(`sudo snap install code --classic`);
