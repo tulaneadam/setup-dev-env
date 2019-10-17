@@ -10,7 +10,7 @@ var distro = getos(function(e,os) {
   return "Your OS distribution is:" +JSON.stringify(os.dist);
 })
 
-console.log(distro);
+//console.log(distro);
 
 
 
