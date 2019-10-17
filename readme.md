@@ -7,24 +7,27 @@ A.  To install and run on Windows, Mac, or Linux(debian/ubuntu/mint/chromebook):
 
 1.  Install nodejs:
 
-Linux (run in terminal):
+a. Linux (run in terminal):
 
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
-Mac (download and run nodejs installer):
+b. Mac (download and run nodejs installer):
 https://nodejs.org/dist/v10.16.3/node-v10.16.3.pkg
 
-Windows (download and run nodejs installer):
+c. Windows (download and run nodejs installer):
 https://nodejs.org/dist/v10.16.3/node-v10.16.3-x86.msi
 
 2.  Download the setup-dev-env app to your desktop and unzip.
+
 https://github.com/tulaneadam/setup-dev-env/archive/master.zip
 
 3.  Open folder in terminal, install and run with:
+
 npm i && npm start
 
 B. To install and run as npm module(Linux(deb)/Mac/Windows):
+https://www.npmjs.com/package/setup-dev-env
 
 0.  Install nodejs (via terminal or link):
 1.  Create a new folder in desktop.
