@@ -5,15 +5,15 @@ var platform = os.platform();
  
 getos(function(e,os) {
   if(e) return console.log(e);
-  var result= JSON.stringify(os);
-  console.log(result);
-
-})
-
-distro='';
+  var result = (os);
+  var distro = result.dist;
+  console.log(distro);
 
 
-if (platform==='linux' && distro!=='Debian') {
+
+
+
+ if (platform==='linux' && distro!=='Debian') {
  shell.exec(`sudo apt-get update`);
  shell.exec(`sudo apt-get install -y gnome-software gnome-packagekit`);
  shell.exec(`sudo apt-get update`);
@@ -71,3 +71,4 @@ shell.exec(`sudo apt-get install -y gnome-software gnome-packagekit`);
  shell.exec(`sudo apt-get install -y code`);
 }
 
+})
