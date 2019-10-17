@@ -1,7 +1,7 @@
 {
-  "name": "nodeshell",
-  "version": "1.0.0",
-  "description": "",
+  "name": "setup-dev-env",
+  "version": "1.4.4",
+  "description": "Setup Dev Env\r https://github.com/tulaneadam/setup-dev-env",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,5 +12,14 @@
   "dependencies": {
     "getos": "^3.1.1",
     "shelljs": "^0.8.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tulaneadam/setup-dev-env.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tulaneadam/setup-dev-env/issues"
+  },
+  "homepage": "https://github.com/tulaneadam/setup-dev-env#readme"
 }
