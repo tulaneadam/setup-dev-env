@@ -7,7 +7,9 @@ getos(function(e,os) {
   if(e) return console.log(e);
   var result = (os);
   var distro = result.dist;
-  console.log(distro);
+  
+ if (distro!==undefined) {console.log(distro)}
+ else if (distro===undefined) {console.log(platform)}
 
 
 
