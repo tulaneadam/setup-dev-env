@@ -5,12 +5,11 @@ var platform = os.platform();
 
 var getos = require('getos')
  
-var distro = getos(function(e,os) {
-  if(e) return console.log(e)
-  return "Your OS distribution is:" +JSON.stringify(os.dist);
-})
-
-//console.log(distro);
+getos(function(e,os) {
+  if(e) return console.log(e);
+  var result= JSON.stringify(os);
+  console.log(result);
+}
 
 
 
