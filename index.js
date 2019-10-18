@@ -71,7 +71,7 @@ shell.exec(`sudo apt-get install -y gnome-software gnome-packagekit`);
  shell.exec(`sudo apt install -y ./gitkraken-amd64.deb`);
 };
  console.log(' ');
- console.log('Your development environment is now setup.  Happy coding...');
+ console.log('Your development environment should now be setup with Git, GitKraken, Node, Mongodb, VSCode, and the main package manager for your platform.  Happy coding...');
  
 }
 
