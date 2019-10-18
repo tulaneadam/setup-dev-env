@@ -64,6 +64,7 @@ shell.exec(`sudo apt-get install -y gnome-software gnome-packagekit`);
  shell.exec(`curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg && sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/ && sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'`);
  shell.exec(`sudo apt-get install -y apt-transport-https`);
  shell.exec(`sudo apt-get install code`);
+ shell.exec(`wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -`);
  shell.echo(`"deb http://repo.mongodb.org/apt/debian stretch/mongodb-org/4.2 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list`);
  shell.exec(`sudo apt-get update`); 
  shell.exec(`sudo apt-get install mongodb-org`);
