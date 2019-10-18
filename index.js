@@ -14,7 +14,6 @@ getos(function(e,os) {
 
 console.log(' ');
 
-
  if (platform==='linux' && distro!=='Debian') {
  shell.exec(`sudo apt-get update`);
  shell.exec(`sudo apt-get install -y gnome-software gnome-packagekit`);
@@ -26,6 +25,8 @@ console.log(' ');
  shell.exec(`sudo snap install mongo32`);
  shell.exec(`sudo snap install gitkraken`);
  shell.exec(`sudo snap install code --classic`);
+ console.log(' ');
+ console.log('Your development environment is now setup.  Happy coding...');
 }
 
 else if (platform==='darwin'){
@@ -36,6 +37,8 @@ else if (platform==='darwin'){
  shell.exec(`brew cask install visual-studio-code`);
  shell.exec(`brew install git`);
  shell.exec(`brew cask install gitkraken`);
+ console.log(' ');
+ console.log('Your development environment is now setup.  Happy coding...');
  
 }
 
@@ -66,13 +69,13 @@ shell.exec(`sudo apt-get install -y gnome-software gnome-packagekit`);
  shell.exec(`curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg && sudo install -y -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/`)
  shell.exec(`sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'`);
  shell.exec(`sudo apt-get install -y code`);
- 
  if (!shell.which('gitkraken')) 
 {
  shell.exec(`wget https://release.gitkraken.com/linux/gitkraken-amd64.deb`);
  shell.exec(`sudo apt install -y ./gitkraken-amd64.deb`);
 };
- 
+ console.log(' ');
+ console.log('Your development environment is now setup.  Happy coding...');
  
 }
 
