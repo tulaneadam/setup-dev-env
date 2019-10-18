@@ -67,7 +67,7 @@ shell.exec(`sudo apt-get install -y gnome-software gnome-packagekit`);
  shell.exec(`wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -`);
  shell.exec(`echo "deb http://repo.mongodb.com/apt/debian stretch/mongodb-org/4.2 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list`);
  shell.exec(`sudo apt-get update`); 
- shell.exec(`sudo apt-get install mongodb-org`);
+ shell.exec(`sudo apt-get install -y mongodb-org`);
  if (!shell.which('gitkraken')) 
 {
  shell.exec(`wget https://release.gitkraken.com/linux/gitkraken-amd64.deb`);
