@@ -9,7 +9,7 @@ A.  To install and run on Windows, Mac, or Linux(debian/ubuntu/mint/chromebook):
 
 a. Linux (run in terminal):
 
-sudo apt install -y nodejs
+sudo apt install nodejs
 
 b. Mac (download and run nodejs installer):
 https://nodejs.org/dist/v10.16.3/node-v10.16.3.pkg
