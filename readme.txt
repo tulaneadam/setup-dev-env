@@ -7,7 +7,7 @@ A.  To install and run on Windows, Mac, or Linux(debian/ubuntu/mint/chromebook):
 
 1.  Install nodejs:
 
-a. Linux(Debian based distrinutions) (run in terminal):
+a. Linux(Debian/Ubuntu/Mint/Chromebook) (run in terminal):
 
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && sudo apt-get install -y nodejs
 
