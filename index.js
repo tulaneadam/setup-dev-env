@@ -26,7 +26,8 @@ console.log(' ');
  shell.exec(`sudo snap install gitkraken`);
  shell.exec(`sudo snap install code --classic`);
  console.log(' ');
- console.log('Your development environment is now setup.  Happy coding...');
+ console.log('Your development environment should now be setup with Git, GitKraken, Node, Mongodb, VSCode, and the main package manager for your platform.  Happy coding...');
+ 
 }
 
 else if (platform==='darwin'){
@@ -38,7 +39,7 @@ else if (platform==='darwin'){
  shell.exec(`brew install git`);
  shell.exec(`brew cask install gitkraken`);
  console.log(' ');
- console.log('Your development environment is now setup.  Happy coding...');
+ console.log('Your development environment should now be setup with Git, GitKraken, Node, Mongodb, VSCode, and the main package manager for your platform.  Happy coding...');
  
 }
 
