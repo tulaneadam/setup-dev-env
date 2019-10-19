@@ -14,15 +14,15 @@ getos(function(e,os) {
 
 console.log(' ');
 
- if (platform==='linux' && distro!=='Debian') {
+ if (platform==='linux' && distro!==='Debian') {
  shell.exec(`sudo apt-get update`);
  shell.exec(`sudo apt-get install -y gnome-software gnome-packagekit`);
- shell.exec(`sudo apt install -y nautilus`) 
- shell.exec(`sudo apt-get install -y apt-transport-https`)
+ shell.exec(`sudo apt install -y nautilus`);
+ shell.exec(`sudo apt install -y mongodb`);
+ shell.exec(`sudo apt-get install -y apt-transport-https`);
  shell.exec(`git config --global credential.helper cache`);
  shell.exec(`sudo apt install -y snapd`);
  shell.exec(`sudo snap install snap-store`);
- shell.exec(`sudo snap install mongo32`);
  shell.exec(`sudo snap install gitkraken`);
  shell.exec(`sudo snap install code --classic`);
  console.log(' ');
