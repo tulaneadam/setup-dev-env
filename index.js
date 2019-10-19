@@ -14,7 +14,7 @@ getos(function(e,os) {
 
 console.log(' ');
 
- if (platform==='linux' && distro!==='Debian') {
+ if (platform==='linux' && distro!=='Debian') {
  shell.exec(`sudo apt-get update`);
  shell.exec(`sudo apt-get install -y gnome-software gnome-packagekit`);
  shell.exec(`sudo apt install -y nautilus`);
