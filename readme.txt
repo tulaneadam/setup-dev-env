@@ -13,7 +13,7 @@ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && sudo apt-get 
 
 b. Linux (Ubuntu/Mint) (run in terminal):
 
-sudo apt install -y nodejs
+sudo apt install -y nodejs  && sudo apt install -y npm
 
 c. Mac (download and run nodejs installer):
 https://nodejs.org/dist/v10.16.3/node-v10.16.3.pkg
