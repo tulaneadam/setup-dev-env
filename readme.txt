@@ -29,6 +29,8 @@ https://github.com/tulaneadam/setup-dev-env/archive/master.zip
 
 npm i && npm start
 
+4.  Restart computer when finished (Linux users only).
+
 B. To install and run as npm module(Linux(deb)/Mac/Windows):
 https://www.npmjs.com/package/setup-dev-env
 
