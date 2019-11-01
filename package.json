@@ -4,7 +4,7 @@
   "description": "Setup Dev Env\r https://github.com/tulaneadam/setup-dev-env",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node index"
   },
   "author": "",
@@ -13,7 +13,9 @@
     "getos": "^3.1.1",
     "shelljs": "^0.8.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tulaneadam/setup-dev-env.git"

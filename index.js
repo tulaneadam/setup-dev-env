@@ -3,7 +3,7 @@ const shell = require('shelljs');
 const getos = require('getos');
 const platform = os.platform();
 
-getos((error, osInfo) => {
+module.exports = () => getos((error, osInfo) => {
   if (error) return console.log(error);
   const result = osInfo;
   const distro = result.dist;
@@ -69,4 +69,5 @@ getos((error, osInfo) => {
     console.log(' ');
     console.log('Your development environment should now be setup with Git, GitKraken, Node, Mongodb, VSCode, and the main package manager for your platform.  Happy coding...');
   }
+  return osInfo;
 });
