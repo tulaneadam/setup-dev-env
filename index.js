@@ -3,7 +3,7 @@ const shell = require('shelljs');
 const getos = require('getos');
 const platform = os.platform();
  
-getos(function(e,os) {
+module.exports = () => getos(function(e,os) {
   if(e) return console.log(e);
   var result = os;
   var distro = result.dist;
@@ -71,5 +71,5 @@ shell.exec(`git config --global credential.helper cache`);
  console.log('Your development environment should now be setup with Git, GitKraken, Node, Mongodb, VSCode, and the main package manager for your platform.  Happy coding...');
  
 }
-
+return result;
 })
