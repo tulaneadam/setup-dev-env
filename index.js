@@ -3,7 +3,7 @@ const shell = require('shelljs');
 const getos = require('getos');
 const platform = os.platform();
  
-getos(function(e,os) {
+const osInfo = getos(function(e,os) {
   if(e) return console.log(e);
   var result = os;
   var distro = result.dist;
