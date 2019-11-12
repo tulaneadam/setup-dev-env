@@ -1,9 +1,9 @@
 Setup Dev Env
 https://github.com/tulaneadam/setup-dev-env
 
-Setup Dev Env is a cross-platform node app to detect your computer's OS and automatically set up your development environment on Windows, Mac, and Linux platforms.  Install Node.js, Mongodb, Git, GitKraken, VSCode, and a package manager(chocolatey, brew, or snap, or gnome software center) on any platform the app is run on.
+Setup Dev Env is a cross-platform node app to detect your computer's OS and automatically set up your development environment on Windows, Mac, and Linux platforms.  Install Node.js, Mongodb, Git, GitKraken, VSCode, Nautilus (Linux only) and the main package manager(Chocolatey, Brew, Snap, or Gnome Software Center) on any platform the app is run on.
 
-A.  To install and run on Windows, Mac, or Linux(debian/ubuntu/mint/chromebook):
+A.  To install and run setup-dev-env node app on Windows, Mac, or Linux(debian/ubuntu/mint/chromebook):
 
 1.  Install nodejs:
 
