@@ -5,7 +5,7 @@ Setup Dev Env is a cross-platform node app to detect your computer's OS and auto
 
 A.  To install and run setup-dev-env node app on Windows, Mac, or Linux(debian/ubuntu/mint/chromebook):
 
-1.  Install nodejs:
+Step 1.  Install nodejs:
 
 a. Linux(Debian/Chromebook) (run in terminal):
 
@@ -21,15 +21,15 @@ https://nodejs.org/dist/v10.16.3/node-v10.16.3.pkg
 d. Windows (download and run nodejs installer):
 https://nodejs.org/dist/v10.16.3/node-v10.16.3-x86.msi
 
-2.  Download the setup-dev-env app to your desktop and unzip.
+Step 2.  Download the setup-dev-env app to your desktop and unzip.
 
 https://github.com/tulaneadam/setup-dev-env/archive/master.zip
 
-3.  Open folder in terminal, install and run with:
+Step 3.  Open folder in terminal, install and run with:
 
 npm i && npm start
 
-4.  Restart computer when finished (Linux users only).
+Step 4.  Restart computer when finished (Linux users only).
 
 B. To install and run as npm module(Linux(deb)/Mac/Windows):
 https://www.npmjs.com/package/setup-dev-env
