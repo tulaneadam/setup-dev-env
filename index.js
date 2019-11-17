@@ -2,6 +2,8 @@ const os = require('os');
 const shell = require('shelljs');
 const getos = require('getos');
 const platform = os.platform();
+
+//Create function to detect operating system platform details and install custom development environment for the detected platform.
  
 const setupDevEnv = getos(function(e,os) {
   if(e) return console.log(e);
@@ -50,19 +52,14 @@ shell.exec(`sudo apt-get update`);
 shell.exec(`sudo apt-get install -y gnome-software gnome-packagekit`);
 shell.exec(`sudo apt install -y nautilus`) ;
 shell.exec(`git config --global credential.helper cache`);
- //shell.exec(`sudo apt install -y snapd`);
- //shell.exec(`sudo snap install snap-store`);
- //shell.exec(`sudo snap install mongo32`);
- //shell.exec(`sudo snap install gitkraken`);
- //shell.exec(`sudo snap install code --classic`);
- shell.exec(`curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg`);
- shell.exec(`sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/`);
- shell.exec(`sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'`);
- shell.exec(`sudo apt-get install apt-transport-https`);
- shell.exec(`sudo apt-get update`);
- shell.exec(`sudo apt-get install -y code`);
- shell.exec(`sudo apt install -y mongodb`);
- if (!shell.which('gitkraken')) 
+shell.exec(`curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg`);
+shell.exec(`sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/`);
+shell.exec(`sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'`);
+shell.exec(`sudo apt-get install apt-transport-https`);
+shell.exec(`sudo apt-get update`);
+shell.exec(`sudo apt-get install -y code`);
+shell.exec(`sudo apt install -y mongodb`);
+if (!shell.which('gitkraken')) 
 {
  shell.exec(`wget https://release.gitkraken.com/linux/gitkraken-amd64.deb`);
  shell.exec(`sudo apt install -y ./gitkraken-amd64.deb`);
