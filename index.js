@@ -71,14 +71,14 @@ getos(function (e, os) {
 
 
 // NPM test
-module.exports = () => {
-  return new Promise((resolve, reject) => {
+module.exports = {
+  getOs: () => new Promise((resolve, reject) => {
     getos((err, os) => {
       if (err) {
         reject(err);
       } else {
         resolve(os);
       }
-    })
-  });
+    });
+  })
 };
