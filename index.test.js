@@ -1,8 +1,8 @@
 const setupDevEnv = require('./index');
 
 // To mock the module, enable next 2 lines
-jest.mock('./index');
-setupDevEnv.mockResolvedValue({os: 'custom OS'});
+//jest.mock('./index');
+//setupDevEnv.mockResolvedValue({os: 'custom OS'});
 
 it('should return the os info for the environment', () => {
     /*
