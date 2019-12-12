@@ -7,13 +7,13 @@ const setupDevEnv = require('./index');
 it('should return the os info for the environment', () => {
     /*
     try {
-        const ouput = await setupDevEnv();
-        expect(ouput.os).toBeDefined();
+        const output = await setupDevEnv();
+        expect(output.os).toBeDefined();
     } catch (err) {
         expect(err).toThrow(err);
     }
 */
-    setupDevEnv().then(ouput => {
-        expect(ouput.os).toBeDefined();
+    setupDevEnv().then(output => {
+        expect(output.os).toBeDefined();
     }).catch(err => expect(err).toThrow(err));
 });
