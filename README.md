@@ -26,6 +26,7 @@ Step 2.  Download the setup-dev-env app to your desktop and unzip.
 https://github.com/tulaneadam/setup-dev-env/archive/master.zip
 
 Step 3.  Open folder in terminal, install and run with:
+
 cd setup-dev-env
 
 npm i && npm start
