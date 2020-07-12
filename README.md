@@ -27,7 +27,7 @@ https://github.com/tulaneadam/setup-dev-env/archive/master.zip
 
 Step 3.  Open folder in terminal, install and run with:
 
-cd setup-dev-env
+cd setup-dev-env-master
 
 npm i && npm start
 
