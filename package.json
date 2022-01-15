@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "getos": "^3.1.1",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.5"
   },
   "devDependencies": {
     "jest": "^24.9.0"
